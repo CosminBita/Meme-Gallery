@@ -73,20 +73,24 @@
 
       }
 
-      @media screen and (max-width: 380px) {
-          #grid-container {
-              width:100vw;
-          }
+      @media screen and (max-width:780px) {
+        #grid-container {
+          width:50%;
+        }
+        #boxes {
+          display:flex;
+          flex-wrap: wrap;
+        }
+      }
+      @media screen and (max-width:320px) {
         header {
+          width:1%;
           font-size:0.5em;
         }
         #boxes {
           display:flex;
-          flex-wrap:wrap;
-          flex-direction:column;
-        }
-        .box {
-            width:100vw;
+          flex-wrap: wrap;
+          flex-direction: column;
         }
       }
     </style>
